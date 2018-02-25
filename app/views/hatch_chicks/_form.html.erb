@@ -1,0 +1,29 @@
+<%= form_for(@hatch_chick) do |f| %>
+  <% if @hatch_chick.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hatch_chick.errors.count, "error") %> prohibited this hatch_chick from being saved:</h2>
+
+      <ul>
+      <% @hatch_chick.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hatch_id %><br>
+    <%= f.text_field :hatch_id %>
+  </div>
+  <div class="field">
+    <%= f.label :breed_id %><br>
+    <%= f.text_field :breed_id %>
+  </div>
+  <div class="field">
+    <%= f.label :sex %><br>
+    <%= f.text_field :sex %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

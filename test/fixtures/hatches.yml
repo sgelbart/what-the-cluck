@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  hatched_at: 2018-02-25 05:57:21
+  chicken_amount: 1
+  hatchery_id: 
+
+two:
+  name: MyString
+  description: MyText
+  hatched_at: 2018-02-25 05:57:21
+  chicken_amount: 1
+  hatchery_id: 

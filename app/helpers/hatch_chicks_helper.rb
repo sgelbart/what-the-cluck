@@ -1,0 +1,2 @@
+module HatchChicksHelper
+end

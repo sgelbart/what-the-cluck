@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hatch:</strong>
+  <%= @hatch_chick.hatch %>
+</p>
+
+<p>
+  <strong>Breed:</strong>
+  <%= @hatch_chick.breed %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @hatch_chick.sex %>
+</p>
+
+<%= link_to 'Edit', edit_hatch_chick_path(@hatch_chick) %> |
+<%= link_to 'Back', hatch_chicks_path %>

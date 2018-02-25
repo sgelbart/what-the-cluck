@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Predators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @predators.each do |predator| %>
+      <tr>
+        <td><%= predator.name %></td>
+        <td><%= link_to 'Show', predator %></td>
+        <td><%= link_to 'Edit', edit_predator_path(predator) %></td>
+        <td><%= link_to 'Destroy', predator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Predator', new_predator_path %>

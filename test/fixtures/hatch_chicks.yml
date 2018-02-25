@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hatch_id: 
+  breed_id: 
+  sex: 
+
+two:
+  hatch_id: 
+  breed_id: 
+  sex: 

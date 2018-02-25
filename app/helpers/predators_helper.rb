@@ -1,0 +1,2 @@
+module PredatorsHelper
+end

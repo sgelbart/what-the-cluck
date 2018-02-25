@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hatch.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @hatch.description %>
+</p>
+
+<p>
+  <strong>Hatched at:</strong>
+  <%= @hatch.hatched_at %>
+</p>
+
+<p>
+  <strong>Chicken amount:</strong>
+  <%= @hatch.chicken_amount %>
+</p>
+
+<p>
+  <strong>Hatchery:</strong>
+  <%= @hatch.hatchery %>
+</p>
+
+<%= link_to 'Edit', edit_hatch_path(@hatch) %> |
+<%= link_to 'Back', hatches_path %>
