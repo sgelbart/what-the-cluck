@@ -15,10 +15,12 @@ class HatchesController < ApplicationController
   # GET /hatches/new
   def new
     @hatch = Hatch.new
+    2.times { @hatch.images.build}
   end
 
   # GET /hatches/1/edit
   def edit
+    2.times { @hatch.images.build}
   end
 
   # POST /hatches
@@ -69,6 +71,6 @@ class HatchesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hatch_params
-      params.require(:hatch).permit(:name, :description, :hatched_at, :chicken_amount, :hatchery_id)
+      params.require(:hatch).permit(:name, :description, :hatched_at, :chicken_amount, :hatchery_id, images_attributes: [:id, :image])
     end
 end

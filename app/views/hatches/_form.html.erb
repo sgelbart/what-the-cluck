@@ -16,5 +16,13 @@
     <%= f.datetime_select :hatched_at %>
     <%= f.number_field :chicken_amount %>
     <%= f.text_field :hatchery_id %>
+    <ul>
+      <%= f.fields_for :images do |i| %>
+        <li>
+          <%= image_tag(i.object.image_url, width: 200) if i.object.image.present? %>
+          <%= i.file_field :image %>
+        </li>
+      <% end %>
+    </ul>
     <%= f.submit %>
 <% end %>

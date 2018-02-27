@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180227052023) do
+ActiveRecord::Schema.define(version: 20180227053716) do
 
   create_table "breeds", force: :cascade do |t|
     t.string   "name"
@@ -81,8 +81,9 @@ ActiveRecord::Schema.define(version: 20180227052023) do
   create_table "images", force: :cascade do |t|
     t.integer  "imageable_id"
     t.string   "image"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "imageable_type"
   end
 
   add_index "images", ["imageable_id"], name: "index_images_on_imageable_id"
