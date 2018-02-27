@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180225212153) do
+ActiveRecord::Schema.define(version: 20180227052023) do
 
   create_table "breeds", force: :cascade do |t|
     t.string   "name"
@@ -96,8 +96,9 @@ ActiveRecord::Schema.define(version: 20180225212153) do
 
   create_table "posts", force: :cascade do |t|
     t.integer  "postable_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "postable_type"
   end
 
   add_index "posts", ["postable_id"], name: "index_posts_on_postable_id"

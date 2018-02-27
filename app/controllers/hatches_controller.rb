@@ -25,9 +25,9 @@ class HatchesController < ApplicationController
   # POST /hatches.json
   def create
     @hatch = Hatch.new(hatch_params)
-
     respond_to do |format|
       if @hatch.save
+        @post = Post.new(postable_type: 'Hatch', postable_id: @hatch.id).save()
         format.html { redirect_to @hatch, notice: 'Hatch was successfully created.' }
         format.json { render :show, status: :created, location: @hatch }
       else

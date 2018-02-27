@@ -1,3 +1,3 @@
 class Post < ActiveRecord::Base
-  belongs_to :postable
+  belongs_to :postable, polymorphic: true
 end

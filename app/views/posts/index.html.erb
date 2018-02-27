@@ -5,7 +5,7 @@
 <div class="row">
   <% @posts.each do |post| %>
     <div class="col-sm-4">
-      <div class=""></div>
+      <div class=""><strong><%= post.postable.name %></strong>: <%= post.postable.description %></div>
     </div>
   <% end %>
 </div>
