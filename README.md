@@ -4,7 +4,7 @@ The social network for chickens and their keepers.
 
 This project was built as a Rails learning project. It is a WIP.
 
-**Please see "Hatches" for example form*
+**Please see "Hatches" for example form**
 
 ![alt text](https://raw.githubusercontent.com/sgelbart/what-the-cluck/master/homescreen.png)
 
