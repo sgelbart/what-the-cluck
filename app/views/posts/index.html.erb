@@ -5,7 +5,14 @@
 <div class="row">
   <% @posts.each do |post| %>
     <div class="col-sm-4">
-      <div class=""><strong><%= post.postable.name %></strong>: <%= post.postable.description %></div>
+      <div class="thumbnail">
+        <img src="<%= post.postable.images.first.image_url if post.postable.images.first.present? %>">
+        <div class="caption">
+          <h3><%= post.postable.name %></h3>
+          <p><%= post.postable.description %></p>
+          <p><a href="#" class="btn btn-primary disabled" title="comming soon!" role="button">Like</a> <a href="#" class="btn btn-default disabled" title="comming soon!" role="button">Coment</a></p>
+        </div>
+      </div>
     </div>
   <% end %>
 </div>
