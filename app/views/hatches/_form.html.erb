@@ -1,4 +1,4 @@
-<%= form_for(@hatch) do |f| %>
+<%= bootstrap_form_for(@hatch) do |f| %>
   <% if @hatch.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@hatch.errors.count, "error") %> prohibited this hatch from being saved:</h2>
@@ -11,27 +11,10 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
     <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
     <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :hatched_at %><br>
     <%= f.datetime_select :hatched_at %>
-  </div>
-  <div class="field">
-    <%= f.label :chicken_amount %><br>
     <%= f.number_field :chicken_amount %>
-  </div>
-  <div class="field">
-    <%= f.label :hatchery_id %><br>
     <%= f.text_field :hatchery_id %>
-  </div>
-  <div class="actions">
     <%= f.submit %>
-  </div>
 <% end %>

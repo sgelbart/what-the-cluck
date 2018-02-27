@@ -7,8 +7,38 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="top-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+          <%= image_tag('wtc-logo.png', :class => 'brand') %>
+        </div>
+        <div class="col-xs-8">
+          <ul class="nav nav-pills pull-right">
+            <li><%= link_to 'Projects', projects_path %></li>
+            <li><%= link_to 'Chickens', chickens_path %></li>
+            <li><%= link_to 'Hatches', hatches_path %></li>
+            <li><%= link_to 'Breeds', breeds_path %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% if current_page?('/') %>
+    <div class="jumbotron jumbotron-red-background">
+    <div class="container">
+      <h1>The social network dedicated to your chooks.</h1>
+      <p>Find and track breed information, hatches, projects, and more!</p>
+    </div>
+</div>
+  <% end %>
 
-<%= yield %>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
