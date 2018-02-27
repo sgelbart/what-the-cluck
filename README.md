@@ -18,6 +18,7 @@ This project was built as a Rails learning project. It is a WIP.
 - Branding (excluding illustration), concept, and design using Bootstrap.
 
 # Todo
+- [ ] **Update to secure dependencies!!!**
 - [ ] Add posts for additional objects
 - [ ] Add likes and commenting
 - [ ] Add devise!
