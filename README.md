@@ -19,9 +19,9 @@ This project was built as a Rails learning project. It is a WIP.
 
 # Todo
 - [ ] Add posts for additional objects
-- [ ] AAdd likes and commenting
-- [ ] AAdd devise!
-- [ ] AAdd admin backend
-- [ ] AAnd more...
+- [ ] Add likes and commenting
+- [ ] Add devise!
+- [ ] Add admin backend
+- [ ] And more...
 
 
